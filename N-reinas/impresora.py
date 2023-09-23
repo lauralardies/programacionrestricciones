@@ -2,7 +2,7 @@ import time
 from ortools.sat.python import cp_model
 
 class Impresora(cp_model.CpSolverSolutionCallback):
-    """Imprime los pasos intermedios"""
+    """Imprime las soluciones"""
 
     def __init__(self, reinas):
         cp_model.CpSolverSolutionCallback.__init__(self)
